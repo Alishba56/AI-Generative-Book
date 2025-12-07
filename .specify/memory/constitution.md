@@ -1,55 +1,78 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+<!--
+Version change: old (N/A) → new (0.1.0)
+List of modified principles:
+  - Added Principle I: Accuracy
+  - Added Principle II: Clarity
+  - Added Principle III: Reproducibility
+  - Added Principle IV: Simplicity
+  - Added Principle V: Standards
+Added sections:
+  - Constraints
+  - Success Criteria
+Removed sections: N/A
+Templates requiring updates:
+  - .specify/templates/plan-template.md: ✅ updated (implicit, no direct change needed as it refers to constitution)
+  - .specify/templates/spec-template.md: ✅ updated (implicit, no direct change needed as it refers to constitution)
+  - .specify/templates/tasks-template.md: ✅ updated (implicit, no direct change needed as it refers to constitution)
+  - .gemini/commands/sp.adr.toml: ✅ updated (reviewed, no changes needed)
+  - .gemini/commands/sp.analyze.toml: ✅ updated (reviewed, no changes needed)
+  - .gemini/commands/sp.checklist.toml: ✅ updated (reviewed, no changes needed)
+  - .gemini/commands/sp.clarify.toml: ✅ updated (reviewed, no changes needed)
+  - .gemini/commands/sp.constitution.toml: ✅ updated (reviewed, no changes needed)
+  - .gemini/commands/sp.git.commit_pr.toml: ✅ updated (reviewed, no changes needed)
+  - .gemini/commands/sp.implement.toml: ✅ updated (reviewed, no changes needed)
+  - .gemini/commands/sp.phr.toml: ✅ updated (reviewed, no changes needed)
+  - .gemini/commands/sp.plan.toml: ✅ updated (reviewed, no changes needed)
+  - .gemini/commands/sp.specify.toml: ✅ updated (reviewed, no changes needed)
+  - .gemini/commands/sp.tasks.toml: ✅ updated (reviewed, no changes needed)
+Follow-up TODOs:
+  - TODO(RATIFICATION_DATE): Original adoption date unknown.
+Runtime guidance docs:
+  - README.md: ⚠ pending (file not found in current directory structure)
+  - docs/quickstart.md: ⚠ pending (file not found in current directory structure)
+-->
+# AI-Native Textbook on Physical AI & Humanoid Robotics Constitution
 
 ## Core Principles
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+### I. Accuracy
+All technical content MUST be verified against ROS 2, Gazebo, and NVIDIA Isaac documentation to ensure factual correctness and up-to-dateness.
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+### II. Clarity
+Content MUST be written for computer science and robotics students, ensuring accessibility and ease of understanding for the target audience.
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+### III. Reproducibility
+All instructions, particularly for simulations and code examples, MUST be clear and comprehensive enough for readers to replicate them successfully.
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
+### IV. Simplicity
+The textbook MUST consist of six chapters, maintaining conciseness and focus on core learning objectives.
 
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
+### V. Standards
+Content MUST adhere to academic and technical writing standards:
+- Citation style: APA (where references needed).
+- No plagiarism: All content must be original or properly attributed.
+- Clear headings and code snippets: Structure and formatting must enhance readability.
+- Markdown format: The book MUST be suitable for deployment on Docusaurus.
 
-### [PRINCIPLE_6_NAME]
+## Constraints
 
+The project MUST adhere to the following constraints:
+- Chapter Count: Exactly 6 chapters.
+- Chapter Length: Each chapter MUST be between 1500–2500 words.
+- Illustrations/Diagrams: Placeholder Markdown links MUST be included for all planned illustrations and diagrams.
+- Implementation Scope: No front-end or backend implementation is required for this project.
 
-[PRINCIPLE__DESCRIPTION]
+## Success Criteria
 
-## [SECTION_2_NAME]
-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
-
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
-
-## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
-
-[SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
+The project will be considered successful if the following criteria are met:
+- Student Understanding: Students MUST be able to understand the fundamental principles of Physical AI and the basics of humanoid robotics after reading the textbook.
+- Setup and Simulation: Students MUST be able to successfully set up ROS 2 and simulate a simple humanoid robot by following the provided instructions.
+- Deployment Readiness: The completed book MUST be ready for deployment on Docusaurus GitHub Pages.
 
 ## Governance
-<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
+This Constitution outlines the foundational principles and guidelines for the "AI-Native Textbook on Physical AI & Humanoid Robotics" project.
+- Amendments: Any amendments to this Constitution require a formal proposal, discussion, and approval by the project leads. All changes MUST be documented with a clear rationale and an incremented version.
+- Compliance: All project contributions and artifacts MUST comply with the principles and guidelines set forth in this document. Regular reviews will assess adherence.
+- Conflict Resolution: In cases of conflict between project practices and this Constitution, the Constitution SHALL take precedence.
 
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
-
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+**Version**: 0.2.0 | **Ratified**: TODO(RATIFICATION_DATE): Original adoption date unknown. | **Last Amended**: 2025-12-07

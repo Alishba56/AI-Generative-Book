@@ -1,0 +1,5 @@
+# Gitignore for Docusaurus project
+node_modules/
+.docusaurus/
+build/
+.env*
