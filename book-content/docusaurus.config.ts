@@ -65,7 +65,7 @@ const config: Config = {
 
       items: [
        
-        {to: '/Home', label: 'Home', position: 'left'},
+        {to: '/', label: 'Home', position: 'left'},
         {
           type: 'docSidebar',
           sidebarId: 'mainSidebar',
