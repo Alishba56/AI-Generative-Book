@@ -3,3 +3,9 @@ node_modules/
 .docusaurus/
 build/
 .env*
+__pycache__/
+*.pyc
+.venv/
+venv/
+dist/
+*.egg-info/
