@@ -61,39 +61,38 @@ const config: Config = {
       respectPrefersColorScheme: true,
     },
     navbar: {
-      title: 'AI-Native Robotics ',
-
+      title: 'AI-Native Robotics',
+      logo: {
+        alt: 'My Site Logo',
+        src: 'img/new-logo.svg',
+      },
       items: [
-       
-        {to: '/', label: 'Home', position: 'left'},
         {
           type: 'docSidebar',
           sidebarId: 'mainSidebar',
           position: 'left',
-          label: ' Textbook',
+          label: 'Textbook',
         },
-       
       ],
     },
     footer: {
-      
-      style: 'dark',
+      style: 'light',
       links: [
         {
-          title: 'Docs',
+          title: ' ', // Title is hidden but required
           items: [
             {
-              label: ' Textbook',
-              to: '/docs/chapter1',
+              label: 'Discord',
+              href: 'https://discordapp.com/invite/docusaurus',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} AI-Native Robotics  Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} AI-Native Robotics.`,
     },
     prism: {
-      theme: prismThemes.github,
-      darkTheme: prismThemes.dracula,
+      theme: prismThemes.vsLight,
+      darkTheme: prismThemes.palenight,
     },
   } satisfies Preset.ThemeConfig,
 };
